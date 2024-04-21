@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "dataclasses-plus"
+version = "0.1.0"
+description = "Enhanced dataclasses"
+authors = ["yoshnary <yoshinari.nozomu@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fsspec = "^2024.3.1"
+pyyaml = {version = "^6.0.0", optional = true}
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+
+[tool.poetry.extras]
+yaml = ["pyyaml"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
